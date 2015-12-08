@@ -5,25 +5,29 @@
  */
 package bedandbreakfast.controller;
 
-import bedandbreakfast.model.DBManager;
-import java.sql.Connection;
+import bedandbreakfast.view.MainWindow;
 
 /**
  *
  * @author jeremy.williamson
  */
-public class BedBreakfast {
-
+public class Main {
+    
+    private final MainWindow mainWindow;
+    private final EventHandler eventHandler;
+        
+    public Main(){
+        mainWindow = new MainWindow();
+        eventHandler = new EventHandler();
+    }//end constructor
+    
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
-        DBManager dbMan = new DBManager();
         
-        Connection connection = DBManager.getConnection();
+        Main application = new Main();
         
-        
-    }
+    }//end main
     
-}
+}//end main

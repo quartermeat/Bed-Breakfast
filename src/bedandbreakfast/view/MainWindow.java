@@ -5,6 +5,9 @@
  */
 package bedandbreakfast.view;
 
+import com.sun.prism.paint.Color;
+import javax.swing.UIManager;
+
 /**
  *
  * @author jeremy.williamson
@@ -16,7 +19,8 @@ public class MainWindow extends javax.swing.JFrame {
      */
     public MainWindow() {
         //initComponents();
-        
+        initCustomComponents();
+
     }
 
     /**
@@ -44,15 +48,32 @@ public class MainWindow extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String args[]) {
-        /* Set the Nimbus look and feel */
-        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
-        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
-         */
+    private void initCustomComponents() {
+        
+        //setup JFrame
+        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+
+        //setup JFrame Layout///////////////////////////////////////////////////
+        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
+        getContentPane().setLayout(layout);
+        layout.setHorizontalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 400, Short.MAX_VALUE)
+        );
+        layout.setVerticalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 300, Short.MAX_VALUE)
+        );
+
+        pack();
+        //End JFrame layout/////////////////////////////////////////////////////        
+        
+        //Setting up look and feel///////////////////////////
+        UIManager.put("nimbusBase", Color.GREEN);
+        UIManager.put("nimbusBlueGrey", Color.BLUE);
+        UIManager.put("control", Color.BLACK);
+
+        
         try {
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
                 if ("Nimbus".equals(info.getName())) {
@@ -74,10 +95,12 @@ public class MainWindow extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new MainWindow().setVisible(true);
+                setVisible(true);
             }
-        });
-    }
+        });       
+        
+    }//end initCustomComponents()
+       
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     // End of variables declaration//GEN-END:variables
