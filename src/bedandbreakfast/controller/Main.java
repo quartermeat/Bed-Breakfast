@@ -5,6 +5,7 @@
  */
 package bedandbreakfast.controller;
 
+import bedandbreakfast.model.DBManager;
 import bedandbreakfast.view.MainWindow;
 
 /**
@@ -15,10 +16,12 @@ public class Main {
     
     private final MainWindow mainWindow;
     private final EventHandler eventHandler;
+    private final DBManager dbManager;
         
     public Main(){
         mainWindow = new MainWindow();
         eventHandler = new EventHandler();
+        dbManager = new DBManager();
     }//end constructor
     
     /**
