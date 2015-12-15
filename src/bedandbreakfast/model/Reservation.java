@@ -12,7 +12,8 @@ import java.sql.Date;
  * @author Jeremy
  */
 public class Reservation {
-    private int reservationID;    
+
+    private int reservationID;
     private Date firstDate;
     private Date lastDate;
     private boolean guaranteed;
@@ -27,11 +28,11 @@ public class Reservation {
     public void setPricePerNight(double pricePerNight) {
         this.pricePerNight = pricePerNight;
     }
-    
-    public Reservation(){
-        
+
+    public Reservation() {
+
     }//end default constructor
-    
+
     public int getReservationID() {
         return reservationID;
     }

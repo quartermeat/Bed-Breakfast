@@ -417,9 +417,9 @@ public class MainWindow extends javax.swing.JFrame {
         customersIdTextBox = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        
+
         jLabel1.setText("Pick arrive date and leave date.");
-        
+
         jLabel2.setText("to");
 
         customerIdLabel.setText("Customer ID");
@@ -445,99 +445,99 @@ public class MainWindow extends javax.swing.JFrame {
         addReservationButton.setText("Add Reservation");
 
         searchCardReservationButton.setText("Search Card");
-       
+
         searchDatesButton.setText("Search Dates");
 
         javax.swing.GroupLayout reservationPanelLayout = new javax.swing.GroupLayout(reservationPanel);
         reservationPanel.setLayout(reservationPanelLayout);
         reservationPanelLayout.setHorizontalGroup(
-            reservationPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(reservationPanelLayout.createSequentialGroup()
-                .addGap(15, 15, 15)
-                .addGroup(reservationPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(perPerNightLabel)
-                    .addComponent(roomNumberLabel)
-                    .addComponent(guaranteedLabel)
-                    .addComponent(lastDateLabel)
-                    .addComponent(firstDateLabel)
-                    .addComponent(customerIdLabel)
-                    .addGroup(reservationPanelLayout.createSequentialGroup()
-                        .addComponent((JComponent)firstDatePicker, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jLabel2)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent((JComponent)lastDatePicker, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(customerIdTextBox)
-                    .addComponent(firstDateTextBox)
-                    .addComponent(lastDateTextBox)
-                    .addComponent(guaranteedTextBox)
-                    .addComponent(roomNumberTextBox)
-                    .addComponent(pricePerNightTextBox))
-                .addGroup(reservationPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(reservationPanelLayout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                reservationPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(reservationPanelLayout.createSequentialGroup()
+                        .addGap(15, 15, 15)
+                        .addGroup(reservationPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                .addComponent(perPerNightLabel)
+                                .addComponent(roomNumberLabel)
+                                .addComponent(guaranteedLabel)
+                                .addComponent(lastDateLabel)
+                                .addComponent(firstDateLabel)
+                                .addComponent(customerIdLabel)
+                                .addGroup(reservationPanelLayout.createSequentialGroup()
+                                        .addComponent((JComponent) firstDatePicker, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(jLabel2)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent((JComponent) lastDatePicker, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(customerIdTextBox)
+                                .addComponent(firstDateTextBox)
+                                .addComponent(lastDateTextBox)
+                                .addComponent(guaranteedTextBox)
+                                .addComponent(roomNumberTextBox)
+                                .addComponent(pricePerNightTextBox))
                         .addGroup(reservationPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(reservationPanelLayout.createSequentialGroup()
-                                .addComponent(creditCardReservationLabel)
-                                .addGap(0, 0, Short.MAX_VALUE))
-                            .addComponent(creditCardReservationTextBox))
-                        .addContainerGap())
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, reservationPanelLayout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 42, Short.MAX_VALUE)
-                        .addGroup(reservationPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(searchCardReservationButton)
-                            .addComponent(addReservationButton)
-                            .addComponent(searchDatesButton))
-                        .addGap(46, 46, 46))))
+                                .addGroup(reservationPanelLayout.createSequentialGroup()
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addGroup(reservationPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                                .addGroup(reservationPanelLayout.createSequentialGroup()
+                                                        .addComponent(creditCardReservationLabel)
+                                                        .addGap(0, 0, Short.MAX_VALUE))
+                                                .addComponent(creditCardReservationTextBox))
+                                        .addContainerGap())
+                                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, reservationPanelLayout.createSequentialGroup()
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 42, Short.MAX_VALUE)
+                                        .addGroup(reservationPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                                .addComponent(searchCardReservationButton)
+                                                .addComponent(addReservationButton)
+                                                .addComponent(searchDatesButton))
+                                        .addGap(46, 46, 46))))
         );
         reservationPanelLayout.setVerticalGroup(
-            reservationPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(reservationPanelLayout.createSequentialGroup()
-                .addGap(26, 26, 26)
-                .addComponent(jLabel1)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(reservationPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jLabel2)
-                    .addComponent((JComponent)lastDatePicker, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent((JComponent)firstDatePicker, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(59, 59, 59)
-                .addGroup(reservationPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(reservationPanelLayout.createSequentialGroup()
-                        .addComponent(customerIdLabel)
+                reservationPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(reservationPanelLayout.createSequentialGroup()
+                        .addGap(26, 26, 26)
+                        .addComponent(jLabel1)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(customerIdTextBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(reservationPanelLayout.createSequentialGroup()
-                        .addComponent(creditCardReservationLabel)
+                        .addGroup(reservationPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                .addComponent(jLabel2)
+                                .addComponent((JComponent) lastDatePicker, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent((JComponent) firstDatePicker, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(59, 59, 59)
+                        .addGroup(reservationPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                .addGroup(reservationPanelLayout.createSequentialGroup()
+                                        .addComponent(customerIdLabel)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(customerIdTextBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGroup(reservationPanelLayout.createSequentialGroup()
+                                        .addComponent(creditCardReservationLabel)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(creditCardReservationTextBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(creditCardReservationTextBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(firstDateLabel)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(reservationPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(firstDateTextBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(addReservationButton))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(lastDateLabel)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(reservationPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(lastDateTextBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(searchCardReservationButton))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(guaranteedLabel)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(reservationPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(guaranteedTextBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(searchDatesButton))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(roomNumberLabel)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(roomNumberTextBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(perPerNightLabel)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(pricePerNightTextBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(24, Short.MAX_VALUE))
+                        .addComponent(firstDateLabel)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(reservationPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                .addComponent(firstDateTextBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(addReservationButton))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(lastDateLabel)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(reservationPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                .addComponent(lastDateTextBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(searchCardReservationButton))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(guaranteedLabel)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(reservationPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                .addComponent(guaranteedTextBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(searchDatesButton))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(roomNumberLabel)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(roomNumberTextBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(perPerNightLabel)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(pricePerNightTextBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addContainerGap(24, Short.MAX_VALUE))
         );
 
         jTabbedPane1.addTab("Reservations", reservationPanel);
@@ -582,60 +582,60 @@ public class MainWindow extends javax.swing.JFrame {
         javax.swing.GroupLayout customerPanelLayout = new javax.swing.GroupLayout(customerPanel);
         customerPanel.setLayout(customerPanelLayout);
         customerPanelLayout.setHorizontalGroup(
-            customerPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(customerPanelLayout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(customerPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(customerPanelLayout.createSequentialGroup()
-                        .addGroup(customerPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(creditCardLabel)
-                            .addComponent(firstNameLabel)
-                            .addComponent(lastNameLabel)
-                            .addComponent(addressLabel)
-                            .addComponent(firstNameTextBox)
-                            .addComponent(lastNameTextBox)
-                            .addComponent(creditCardTextBox)
-                            .addComponent(addressTextBox, javax.swing.GroupLayout.DEFAULT_SIZE, 249, Short.MAX_VALUE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                customerPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(customerPanelLayout.createSequentialGroup()
+                        .addContainerGap()
                         .addGroup(customerPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(customIdCustomersLabel)
-                            .addComponent(customersIdTextBox, javax.swing.GroupLayout.PREFERRED_SIZE, 113, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addGroup(customerPanelLayout.createSequentialGroup()
-                        .addComponent(addCustomerButton)
-                        .addGap(47, 47, 47)
-                        .addComponent(searchCardButton)))
-                .addContainerGap(51, Short.MAX_VALUE))
+                                .addGroup(customerPanelLayout.createSequentialGroup()
+                                        .addGroup(customerPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                                .addComponent(creditCardLabel)
+                                                .addComponent(firstNameLabel)
+                                                .addComponent(lastNameLabel)
+                                                .addComponent(addressLabel)
+                                                .addComponent(firstNameTextBox)
+                                                .addComponent(lastNameTextBox)
+                                                .addComponent(creditCardTextBox)
+                                                .addComponent(addressTextBox, javax.swing.GroupLayout.DEFAULT_SIZE, 249, Short.MAX_VALUE))
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addGroup(customerPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                                .addComponent(customIdCustomersLabel)
+                                                .addComponent(customersIdTextBox, javax.swing.GroupLayout.PREFERRED_SIZE, 113, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                .addGroup(customerPanelLayout.createSequentialGroup()
+                                        .addComponent(addCustomerButton)
+                                        .addGap(47, 47, 47)
+                                        .addComponent(searchCardButton)))
+                        .addContainerGap(51, Short.MAX_VALUE))
         );
         customerPanelLayout.setVerticalGroup(
-            customerPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(customerPanelLayout.createSequentialGroup()
-                .addGap(46, 46, 46)
-                .addGroup(customerPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(customerPanelLayout.createSequentialGroup()
-                        .addComponent(firstNameLabel)
+                customerPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(customerPanelLayout.createSequentialGroup()
+                        .addGap(46, 46, 46)
+                        .addGroup(customerPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                .addGroup(customerPanelLayout.createSequentialGroup()
+                                        .addComponent(firstNameLabel)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(firstNameTextBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGroup(customerPanelLayout.createSequentialGroup()
+                                        .addComponent(customIdCustomersLabel)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(customersIdTextBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(firstNameTextBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(customerPanelLayout.createSequentialGroup()
-                        .addComponent(customIdCustomersLabel)
+                        .addComponent(lastNameLabel)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(customersIdTextBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(lastNameLabel)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(lastNameTextBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(creditCardLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(creditCardTextBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(addressLabel)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(addressTextBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(customerPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(addCustomerButton)
-                    .addComponent(searchCardButton))
-                .addContainerGap(188, Short.MAX_VALUE))
+                        .addComponent(lastNameTextBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(creditCardLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(creditCardTextBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(addressLabel)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(addressTextBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(customerPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                .addComponent(addCustomerButton)
+                                .addComponent(searchCardButton))
+                        .addContainerGap(188, Short.MAX_VALUE))
         );
 
         jTabbedPane1.addTab("Customers", customerPanel);
@@ -643,12 +643,12 @@ public class MainWindow extends javax.swing.JFrame {
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jTabbedPane1)
+                layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addComponent(jTabbedPane1)
         );
         layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jTabbedPane1)
+                layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addComponent(jTabbedPane1)
         );
 
         pack();
@@ -704,17 +704,16 @@ public class MainWindow extends javax.swing.JFrame {
     public void addAddReservationButtonListener(ActionListener listener) {
         addReservationButton.addActionListener(listener);
     }//end addAddReservationButtonListener
-    
-    public void addSearchCardReservationButtonListener(ActionListener listener){
+
+    public void addSearchCardReservationButtonListener(ActionListener listener) {
         searchCardReservationButton.addActionListener(listener);
     }//end addSearchCardReservationButtonListener
-    
-    public void addSearchDatesButtonListener(ActionListener listener){
+
+    public void addSearchDatesButtonListener(ActionListener listener) {
         searchDatesButton.addActionListener(listener);
     }//end addSearchDatesButtonListener
 
     //END CUSTOM ACTIONLISTENERS//////////////////////////////////////////////////////
-    
     //CUSTOM VARIABLE DECLARATION//////////////////////////////////////////////
     private SqlDateModel firstDateModel;
     private SqlDateModel lastDateModel;
@@ -725,7 +724,6 @@ public class MainWindow extends javax.swing.JFrame {
 
     //CUSTOM METHODS/////////////////////////////////////////////////////////////
     //getter and setters for custom variables
-    
     public DatePanel getFirstDatePicker() {
         return firstDatePicker;
     }
@@ -773,8 +771,8 @@ public class MainWindow extends javax.swing.JFrame {
     public String getCustomerID() {
         return customerIdTextBox.getText();
     }
-    
-    public void setCustomerId(int customerId){
+
+    public void setCustomerId(int customerId) {
         customerIdTextBox.setText(String.valueOf(customerId));
     }
 
@@ -797,47 +795,47 @@ public class MainWindow extends javax.swing.JFrame {
     public int getRoomNumber() {
         return Integer.valueOf(roomNumberTextBox.getText());
     }
-    
-    public double getPricePerNight(){
+
+    public double getPricePerNight() {
         return Double.valueOf(pricePerNightTextBox.getText());
-    }   
-    
-    public void setFirstDate(String newDate){
+    }
+
+    public void setFirstDate(String newDate) {
         firstDateTextBox.setText(newDate);
     }
-    
-    public void setLastDate(String newDate){
+
+    public void setLastDate(String newDate) {
         lastDateTextBox.setText(newDate);
     }
-    
-    public void setGuaranteed(boolean guaranteed){
+
+    public void setGuaranteed(boolean guaranteed) {
         guaranteedTextBox.setText(String.valueOf(guaranteed));
     }
-    
+
     public void setRoomNumber(int roomNumber) {
         roomNumberTextBox.setText(String.valueOf(roomNumber));
     }
-    
-    public void setPricePerNight(double pricePerNight){
+
+    public void setPricePerNight(double pricePerNight) {
         pricePerNightTextBox.setText(String.valueOf(pricePerNight));
     }
-    
-    public int getCustomersId(){
+
+    public int getCustomersId() {
         return Integer.valueOf(customersIdTextBox.getText());
     }
-    
-    public void setCustomersId(int customerId){
+
+    public void setCustomersId(int customerId) {
         customersIdTextBox.setText(String.valueOf(customerId));
     }
-    
-    public String getReservationCreditCard(){
+
+    public String getReservationCreditCard() {
         return creditCardReservationTextBox.getText();
     }
-    
-    public void setReservationCreditCard(String creditCardNumber){
+
+    public void setReservationCreditCard(String creditCardNumber) {
         creditCardReservationTextBox.setText(creditCardNumber);
     }
-    
+
     //END CUSTOM METHODS////////////////////////////////////////////////////////
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

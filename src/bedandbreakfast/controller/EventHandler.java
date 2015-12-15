@@ -109,16 +109,14 @@ public class EventHandler {
             newReservation.setGuaranteed(mainWindow.getGuaranteed());
             newReservation.setPricePerNight(mainWindow.getPricePerNight());
             newReservation.setRoomNumber(mainWindow.getRoomNumber());
-            System.out.println("got here");
             reservationList.addReservation(newReservation);
-            System.out.println("got here too");
         });
     }
 
     public void addSearchCardReservationButtonPressed() {
         mainWindow.addSearchCardReservationButtonListener((java.awt.event.ActionEvent evt) -> {
             Customer searchedCustomer = new Customer();
-            Customer foundCustomer = new Customer();
+            Customer foundCustomer;
             searchedCustomer.setCreditCardNumber(Long.valueOf(mainWindow.getReservationCreditCard()));
             System.out.println("card searched: " + searchedCustomer.getCreditCardNumber().toString());
 
@@ -144,7 +142,7 @@ public class EventHandler {
         });
     }//end addSearchCardReservationButtonPressed
 
-    public void addSearchDatesButtonPressed(){
+    public void addSearchDatesButtonPressed() {
         mainWindow.addSearchDatesButtonListener((java.awt.event.ActionEvent evt) -> {
             try {
                 DateFormat format = new SimpleDateFormat("yyyy-MM-dd");

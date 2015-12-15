@@ -22,7 +22,7 @@ public class CustomerList extends ArrayList<Customer> {
     //default constructor
     public CustomerList() {
         super();
-        dbManager = new DBManager();        
+        dbManager = new DBManager();
     }//end constructor
 
     public void populateList() throws SQLException {
@@ -36,21 +36,19 @@ public class CustomerList extends ArrayList<Customer> {
         while (result.next()) {
             Customer customer = new Customer();
 
-            
             customer.setCustomerID(result.getInt("ID"));
             customer.setFirstName(result.getString("FIRSTNAME"));
             customer.setLastName(result.getString("LASTNAME"));
             customer.setCreditCardNumber(result.getBigDecimal("CREDITCARDNUMBER"));
             customer.setAddress(result.getString("ADDRESS"));
             customer.setReservation(result.getInt("RESERVATION"));
-            
 
             this.add(customer);
             System.out.println("one customer populated");
 
         }//end while
     }
-  
+
     public boolean addCustomer(Customer newCustomer) {
         dbManager.makeConnection();
         Connection connection = dbManager.getConnection();

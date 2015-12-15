@@ -51,8 +51,8 @@ public class Customer {
     public int getCustomerID() {
         return customerID;
     }
-    
-    public void setCustomerID(int customerID){
+
+    public void setCustomerID(int customerID) {
         this.customerID = customerID;
     }
 
@@ -91,8 +91,8 @@ public class Customer {
     public int getReservation() {
         return reservation;
     }
-    
-    public void setReservation(int reservation){
+
+    public void setReservation(int reservation) {
         this.reservation = reservation;
     }
 

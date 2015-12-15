@@ -18,15 +18,15 @@ import java.util.ArrayList;
  *
  * @author Jeremy
  */
-public class ReservationList extends ArrayList<Reservation>{
-    
+public class ReservationList extends ArrayList<Reservation> {
+
     private final DBManager dbManager;
-    
-    public ReservationList(){
+
+    public ReservationList() {
         super();
         dbManager = new DBManager();
     }//end constructor
-    
+
     public void populateList() throws SQLException {
         dbManager.makeConnection();
         Connection connection = dbManager.getConnection();
@@ -45,9 +45,9 @@ public class ReservationList extends ArrayList<Reservation>{
             reservation.setRoomNumber(result.getInt("ROOMNUMBER"));
             reservation.setPricePerNight(result.getDouble("PRICEPERNIGHT"));
             String guaranteed = result.getString("GUARANTEED");
-            if(guaranteed.equalsIgnoreCase("true")){
+            if (guaranteed.equalsIgnoreCase("true")) {
                 reservation.setGuaranteed(true);
-            }else{
+            } else {
                 reservation.setGuaranteed(false);
             }//end if/else
 
@@ -56,7 +56,7 @@ public class ReservationList extends ArrayList<Reservation>{
 
         }//end while
     }
-    
+
     public boolean addReservation(Reservation newReservation) {
         System.out.println("got here as well");
         dbManager.makeConnection();
@@ -64,12 +64,12 @@ public class ReservationList extends ArrayList<Reservation>{
 
         DateFormat df = new SimpleDateFormat("yyyy-MM-dd");
         System.out.println(newReservation.getFirstDate().toString());
-                
+
         try {
             PreparedStatement preparedStatement = connection.prepareStatement("INSERT INTO RESERVATIONS"
                     + "(FIRSTDATE, LASTDATE, GUARANTEED, ROOMNUMBER, PRICEPERNIGHT, CUSTOMER)"
                     + "VALUES"
-                    + "(TO_DATE('" + df.format(newReservation.getFirstDate()) + "','yyyy-MM-dd')," 
+                    + "(TO_DATE('" + df.format(newReservation.getFirstDate()) + "','yyyy-MM-dd'),"
                     + "TO_DATE('" + df.format(newReservation.getLastDate()) + "', 'yyyy-MM-dd'), '"
                     + newReservation.isGuaranteed() + "', "
                     + newReservation.getRoomNumber() + ", "
@@ -86,37 +86,37 @@ public class ReservationList extends ArrayList<Reservation>{
 
         return add(newReservation);
     }//end add()
-    
-    public Reservation searchCustomerID(int customerID){
-        for(Reservation currentReservation:this){
-            if(currentReservation.getCustomerId()==customerID){
+
+    public Reservation searchCustomerID(int customerID) {
+        for (Reservation currentReservation : this) {
+            if (currentReservation.getCustomerId() == customerID) {
                 return currentReservation;
             }//end if
         }//end for
-        
+
         return null;
     }//end searchCustomerID
-    
-    public Reservation dateSearch(Date firstDate, Date lastDate){
-        for(Reservation currentReservation:this){
-            if(currentReservation.getFirstDate().before(firstDate)){
-                if(currentReservation.getLastDate().after(lastDate)){
+
+    public Reservation dateSearch(Date firstDate, Date lastDate) {
+        for (Reservation currentReservation : this) {
+            if (currentReservation.getFirstDate().before(firstDate)) {
+                if (currentReservation.getLastDate().after(lastDate)) {
                     return currentReservation;
-                }else if(currentReservation.getLastDate().before(lastDate)){
-                    if(currentReservation.getLastDate().after(firstDate)){
+                } else if (currentReservation.getLastDate().before(lastDate)) {
+                    if (currentReservation.getLastDate().after(firstDate)) {
                         return currentReservation;
                     }
                 }
-            }else if(currentReservation.getFirstDate().after(firstDate)){
-                if(currentReservation.getFirstDate().before(lastDate)){
+            } else if (currentReservation.getFirstDate().after(firstDate)) {
+                if (currentReservation.getFirstDate().before(lastDate)) {
                     return currentReservation;
                 }
-            }else if(currentReservation.getFirstDate().equals(firstDate)){
+            } else if (currentReservation.getFirstDate().equals(firstDate)) {
                 return currentReservation;
             }//end if/else if/else if
-                
+
         }//end for
-        return null;            
+        return null;
     }//end dataSearch()
-    
+
 }//end ReservationList

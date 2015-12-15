@@ -5,8 +5,6 @@
  */
 package bedandbreakfast.model;
 
-
-
 import java.sql.*;
 import oracle.jdbc.pool.OracleDataSource;
 
@@ -19,38 +17,38 @@ public class DBManager {
     private final String url = "jdbc:oracle:thin:@//localhost:1521/XE";
     private final String username = "quartermeat";
     private final String password = "JKha3454";
-    
+
     private Connection connection;
-    
+
     private OracleDataSource datasource;
-        
-    public DBManager(){        
-  
+
+    public DBManager() {
+
     }//end constructor
-    
+
     public void makeConnection() {
-        try{
+        try {
             datasource = new OracleDataSource();
             datasource.setURL(url);
             connection = datasource.getConnection(username, password);
-        } catch (SQLException e){
+        } catch (SQLException e) {
             System.out.println(e);
         }//end try/catch
-        
-        if(connection != null){
+
+        if (connection != null) {
             System.out.println("Connection is valid!");
-        }else{
+        } else {
             System.out.println("Connection failed.");
         }//end if/else
-        
+
     }//end getConnection()
-    
+
     public Connection getConnection() {
         return connection;
     }
 
     public void setConnection(Connection connection) {
         this.connection = connection;
-    }   
-        
+    }
+
 }//end DBManager
