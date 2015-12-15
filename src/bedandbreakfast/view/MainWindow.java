@@ -8,7 +8,6 @@ package bedandbreakfast.view;
 import bedandbreakfast.controller.EventHandler;
 import com.sun.prism.paint.Color;
 import java.awt.event.ActionListener;
-import java.sql.Date;
 import javax.swing.JComponent;
 import javax.swing.UIManager;
 import org.jdatepicker.DatePanel;
