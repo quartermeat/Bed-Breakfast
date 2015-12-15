@@ -7,11 +7,8 @@ package bedandbreakfast.model;
 
 
 
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.sql.Statement;
+import java.sql.*;
+import oracle.jdbc.pool.OracleDataSource;
 
 /**
  *
@@ -19,28 +16,41 @@ import java.sql.Statement;
  */
 public class DBManager {
 
-    private static final String url = "jdbc:mysql://sql5.freemysqlhosting.net:3306/sql599053";
-    private static final String driverName = "com.mysql.jdbc.Driver";
-    private static final String username = "sql599053";
-    private static final String password = "pFGV5IlA3r";
+    private final String url = "jdbc:oracle:thin:@//localhost:1521/XE";
+    private final String username = "quartermeat";
+    private final String password = "JKha3454";
     
-    private static Connection connection;
-    private static Statement statement;
-    private static ResultSet resultSet;
+    private Connection connection;
     
-    public DBManager(){
+    private OracleDataSource datasource;
         
-        try {
-            Class.forName(driverName);
-            connection = DriverManager.getConnection(url, username, password);
-        } catch (SQLException|ClassNotFoundException ex) {
-            // log an exception. fro example:
-            System.out.println("Failed to create the database connection.");
-            System.out.println(ex);
-        }//end try/catch
-        
+    public DBManager(){        
+  
     }//end constructor
     
+    public void makeConnection() {
+        try{
+            datasource = new OracleDataSource();
+            datasource.setURL(url);
+            connection = datasource.getConnection(username, password);
+        } catch (SQLException e){
+            System.out.println(e);
+        }//end try/catch
+        
+        if(connection != null){
+            System.out.println("Connection is valid!");
+        }else{
+            System.out.println("Connection failed.");
+        }//end if/else
+        
+    }//end getConnection()
     
+    public Connection getConnection() {
+        return connection;
+    }
+
+    public void setConnection(Connection connection) {
+        this.connection = connection;
+    }   
         
 }//end DBManager

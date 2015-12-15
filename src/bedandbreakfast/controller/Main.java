@@ -5,7 +5,6 @@
  */
 package bedandbreakfast.controller;
 
-import bedandbreakfast.model.DBManager;
 import bedandbreakfast.view.MainWindow;
 
 /**
@@ -14,14 +13,10 @@ import bedandbreakfast.view.MainWindow;
  */
 public class Main {
     
-    private final MainWindow mainWindow;
-    private final EventHandler eventHandler;
-    private final DBManager dbManager;
+    private static MainWindow mainWindow;
         
     public Main(){
         mainWindow = new MainWindow();
-        eventHandler = new EventHandler();
-        dbManager = new DBManager();
     }//end constructor
     
     /**
@@ -30,6 +25,13 @@ public class Main {
     public static void main(String[] args) {
         
         Main application = new Main();
+        mainWindow.getEventHandler().firstDatePickerSelected();
+        mainWindow.getEventHandler().lastDatePickerSelected();
+        mainWindow.getEventHandler().addCustomerButtonPressed();
+        mainWindow.getEventHandler().addSearchCardButtonPressed();
+        mainWindow.getEventHandler().addAddReservationButtonPressed();
+        mainWindow.getEventHandler().addSearchCardReservationButtonPressed();
+        mainWindow.getEventHandler().addSearchDatesButtonPressed();
         
     }//end main
     
